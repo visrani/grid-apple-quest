@@ -1,0 +1,101 @@
+/* This file contains the styles for the game, including layout, colors, and animations for the grid and characters. */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#grid {
+    display: grid;
+    gap: 2px;
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cell {
+    background: #f0f0f0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.player {
+    background: #4CAF50;
+    color: white;
+}
+
+.monster {
+    background: #f44336;
+    color: white;
+}
+
+.apple {
+    background: #FF9800;
+    color: white;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#instructions {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+#instructions li {
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
